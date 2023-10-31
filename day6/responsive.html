@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: burlywood;
+            padding: 30px 10px;
+        }
+
+        .flex-container {
+            width: 100vw;
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .list {
+            list-style-type: none;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .list li {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            font-size: 20px;
+            box-shadow: 10px 5px 3px 1px red;
+        }
+
+        .middle-paragraph {
+            width: 100%;
+            font-size: 20px;
+        }
+
+        .right {
+            width: 100%;
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 0 7px 4px red;
+        }
+
+        .right p {
+            margin-bottom: 60px;
+        }
+
+        footer {
+            margin: 10px;
+            color: white;
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 0 7px 4px red;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .flex-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .list {
+                max-width: 20%;
+            }
+
+            .middle-paragraph {
+                max-width: 70%;
+            }
+        }
+
+        @media only screen and (min-width: 850px) {
+            .flex-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .list {
+                width: 25%;
+            }
+
+            .middle-paragraph {
+                width: 45%;
+            }
+
+            .right {
+                width: 25%;
+            }
+        }
+
+</style>
+</head>
+
+<body>
+    <h1 class="header">
+        INTERN SIKNE KTA HARU AAJA
+    </h1>
+    <div class="flex-container">
+
+        <ul class="list">
+            <li>
+                AJIT
+            </li>
+            <li>
+                SUMIN
+            </li>
+            <li>
+                NISHANTA
+            </li>
+            <li>
+                ADTIYA
+            </li>
+            <li>
+                SANJAYA
+            </li>
+            <li>
+                JWOLANTA
+            </li>
+        </ul>
+        <div class="middle-paragraph">
+            <h1>
+                INTERN
+            </h1>
+            <p>
+                Intern is very important in this time.Who doesnt do intern are foolish people.
+            </p>
+        </div>
+        <div class="right">
+            <div>
+                <h3>
+                    What is intern?
+                </h3>
+                <p>
+                    very good thing. we should learn intern.
+                </p>
+            </div>
+            <div>
+                <h3>
+                    where is intern?
+                </h3>
+                <p>
+                    In sahar.Great city.inside the room
+                </p>
+            </div>
+            <div>
+                <h3>
+                    why intern?
+                </h3>
+                <p>
+                    To improve your work.to get job.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        THANK YOU AND HAVE FUN!
+    </footer>
+</body>
+
+</html>
